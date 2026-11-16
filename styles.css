@@ -111,6 +111,18 @@ a {
 
 @media (min-width: 64rem) {
     .member-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .member-card {
+        grid-column: span 2;
+    }
+
+    .member-card:nth-child(4) {
+        grid-column: 2 / span 2;
+    }
+
+    .member-card:nth-child(5) {
+        grid-column: 4 / span 2;
     }
 }
