@@ -75,7 +75,7 @@ a {
 
 .member-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    grid-template-columns: 1fr;
     gap: 1rem;
     margin-top: 1.5rem;
 }
@@ -102,5 +102,15 @@ a {
     .site-header,
     .site-main {
         width: min(100% - 4rem, var(--content-width));
+    }
+
+    .member-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 64rem) {
+    .member-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
