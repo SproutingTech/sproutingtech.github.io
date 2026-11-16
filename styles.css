@@ -1,0 +1,106 @@
+:root {
+    --color-leaves: #199362;
+    --color-sprout: #95d358;
+    --color-sunshine: #ffe780;
+    --color-sky: #99cff5;
+    --color-water: #208ce5;
+    --color-blossom: #fcbcca;
+    --color-ink: #17352b;
+    --color-surface: #f7fbf5;
+    --content-width: 68rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--color-ink);
+    background: var(--color-surface);
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    color: var(--color-water);
+}
+
+.site-header,
+.site-main {
+    width: min(100% - 2rem, var(--content-width));
+    margin: 0 auto;
+}
+
+.site-header {
+    padding: 1.5rem 0 2rem;
+}
+
+.site-header h1 {
+    margin: 0;
+    color: var(--color-leaves);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.site-nav {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.site-nav a {
+    padding: 0.5rem 0.75rem;
+    color: var(--color-ink);
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 0.35rem;
+}
+
+.site-nav a[aria-current="page"] {
+    background: var(--color-sunshine);
+}
+
+.site-main {
+    padding-bottom: 4rem;
+}
+
+.site-main > h1 {
+    margin-top: 0;
+}
+
+.intro {
+    max-width: 42rem;
+    font-size: 1.15rem;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.member-card {
+    min-height: 10rem;
+    padding: 1.25rem;
+    background: #fff;
+    border: 0.2rem solid var(--color-sprout);
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 0.75rem rgb(23 53 43 / 10%);
+}
+
+.member-card h3 {
+    margin: 0;
+    color: var(--color-leaves);
+}
+
+.member-card p {
+    margin: 0.35rem 0 0;
+}
+
+@media (min-width: 42rem) {
+    .site-header,
+    .site-main {
+        width: min(100% - 4rem, var(--content-width));
+    }
+}
