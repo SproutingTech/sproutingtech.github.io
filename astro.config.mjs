@@ -6,7 +6,7 @@ import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://sproutingtech.org',
+    site: 'https://www.sproutingtech.org',
     trailingSlash: 'never',
     image: {
         responsiveStyles: true,
