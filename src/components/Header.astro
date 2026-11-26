@@ -4,24 +4,77 @@ const activeClass = (href: string) => "cover-and-surround " + (Astro.url.pathnam
 
 <header>
     <nav>
-        <div>
-            <a href="/" class={activeClass("/")}>Home</a>
-            <a href="/scholarships" class={activeClass("/scholarships")}>Scholarships</a>
-            <a href="/stories" class={activeClass("/stories")}>Our Stories</a>
-            <a href="/about" class={activeClass("/about")}>About</a>
-            <a href="/give" class={activeClass("/give")}>Give</a>
+        <button id="menu-toggle" aria-label="Toggle navigation menu">
+            ☰
+        </button>
+        <div id="nav-container">
+            <a href="/" class={activeClass("/")}>
+                Home
+            </a>
+            <a href="/scholarships" class={activeClass("/scholarships")}>
+                Scholarships
+            </a>
+            <a href="/about" class={activeClass("/about")}>
+                About
+            </a>
+            <a href="/give" class={activeClass("/give")}>
+                Give
+            </a>
         </div>
     </nav>
 </header>
+
+<script>
+    function setup() {
+        const menuToggle = document.getElementById("menu-toggle")!;
+        const navContainer = document.getElementById("nav-container")!;
+
+        menuToggle.addEventListener("click", () => {
+            if (navContainer.style.display === "flex") {
+                navContainer.style.display = "none";
+            } else {
+                navContainer.style.display = "flex";
+            }
+        });
+    }
+
+    document.addEventListener("astro:page-load", setup);
+</script>
 
 <style>
     nav {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: start;
     }
 
     .active {
         font-weight: bold;
+    }
+
+    button {
+        display: none;
+        margin-left: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+        nav {
+            flex-direction: column;
+        }
+
+        #nav-container {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            display: none;
+        }
+
+        button {
+            display: block;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
     }
 </style>

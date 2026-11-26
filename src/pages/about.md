@@ -8,14 +8,11 @@ description: About the Sprouting Tech Foundation.
 We are a non profit organization focused on improving STEM education in Texas for K-12 students.
 
 ## Our Team
-<section id="team">
-{['Sai Kurelli', 'Daniel Ting'].map(name => 
-<figure>
-    <img src={'/src/images/' + name.toLowerCase().replace(' ', '-') + '.jpg'} alt={name} />
-    <figcaption>{name}</figcaption>
-</figure>
-)}
-</section>
+![Sai Kurelli](../images/sai-kurelli.jpg)
+Sai Kurelli
+
+![Daniel Ting](../images/daniel-ting.jpg)
+Daniel Ting
 
 ## Fact Sheet
 Legal documents coming soon.
