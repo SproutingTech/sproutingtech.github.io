@@ -1,0 +1,27 @@
+---
+const activeClass = (href: string) => "cover-and-surround " + (Astro.url.pathname === href ? "active" : "");
+---
+
+<header>
+    <nav>
+        <div>
+            <a href="/" class={activeClass("/")}>Home</a>
+            <a href="/scholarships" class={activeClass("/scholarships")}>Scholarships</a>
+            <a href="/stories" class={activeClass("/stories")}>Our Stories</a>
+            <a href="/about" class={activeClass("/about")}>About</a>
+            <a href="/give" class={activeClass("/give")}>Give</a>
+        </div>
+    </nav>
+</header>
+
+<style>
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .active {
+        font-weight: bold;
+    }
+</style>
