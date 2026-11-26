@@ -1,0 +1,126 @@
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+::selection {
+    background-color: var(--sprout);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+    margin-top: 0;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/* Our custom styles */
+
+:root {
+    --leaves: #199362;
+    --sprout: #95d358;
+    --sunshine: #ffe780;
+    --sky: #99cf55;
+    --water: #208ce5;
+    --blossom: #fcbcca;
+
+    --text-color: #111;
+    /* TODO? --bg-color: #fffdf8; */
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.cover-and-surround {
+    padding: 1rem;
+}
+
+a {
+    color: var(--leaves);
+}
+
+a:hover {
+    text-shadow: 0 0 2px white;
+}
+
+pre {
+    padding: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+th,
+td {
+    border: 1px solid var(--text-color);
+    padding: 0.5rem 1rem;
+    text-align: left;
+}
+
+sup,
+sub {
+    line-height: 0;
+    /* Prevent superscripts and subscripts from making line height uneven */
+}
+
+/* https://css-tricks.com/inclusively-hidden/ */
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
