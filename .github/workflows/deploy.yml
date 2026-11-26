@@ -5,8 +5,6 @@ on:
   # Using a different branch name? Replace `main` with your branch’s name
   push:
     branches: [ main ]
-  pull_request:
-    types: [opened, reopened, edited]
   
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
