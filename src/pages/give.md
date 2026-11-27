@@ -5,7 +5,7 @@ description: How to give.
 ---
 
 # How to Give
-Sprouting Tech Foundation is a 501(c)3 public charity and does accept contributions. Individual donations made to the Foundation are tax deductible to the full extent of the law.
+Sprouting Tech Foundation is a 501(c)(3) public charity and does accept contributions. Individual donations made to the Foundation are tax deductible to the full extent of the law.
 
 The Foundation will acknowledge contributions by letter or email, which also serves as an acknowledgement of the contribution for tax purposes.
 
