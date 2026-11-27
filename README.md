@@ -1,10 +1,12 @@
-# Astro Starter Kit: Minimal
+# Sprouting Tech Foundation Website
 
-```sh
-npm create astro@latest -- --template minimal
-```
+## Getting Started
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+1. Install Node Version Manager (nvm)
+2. Run `nvm install`
+3. Run `nvm use`
+4. Run `npm ci`
+5. Run `npm run dev` 
 
 ## 🚀 Project Structure
 
