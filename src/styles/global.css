@@ -1,14 +1,16 @@
 /* https://www.joshwcomeau.com/css/custom-css-reset/ */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 *,
 *::before,
 *::after {
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Figtree",
+        sans-serif;
 }
 
 ::selection {
-    background-color: var(--sprout);
+    background-color: var(--dew);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -60,15 +62,14 @@ h6 {
 /* Our custom styles */
 
 :root {
-    --leaves: #199362;
-    --sprout: #95d358;
-    --sunshine: #ffe780;
-    --sky: #99cf55;
-    --water: #208ce5;
-    --blossom: #fcbcca;
-
-    --text-color: #111;
-    /* TODO? --bg-color: #fffdf8; */
+    --forest: #145B38;
+    --river: #035D84;
+    --wood: #4F2C1D;
+    --dew: #EBF0F2;
+    --leaves: #AAE583;
+    --sunshine: #F4DD7D;
+    --sky: #9EDEF5;
+    --blossom: #FCCDDA;
 }
 
 img {
@@ -85,7 +86,7 @@ img {
 }
 
 a {
-    color: var(--leaves);
+    color: var(--forest);
 }
 
 a:hover {
@@ -103,7 +104,7 @@ table {
 
 th,
 td {
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--wood);
     padding: 0.5rem 1rem;
     text-align: left;
 }

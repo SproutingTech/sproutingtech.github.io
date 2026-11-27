@@ -1,0 +1,20 @@
+ html {
+     scrollbar-gutter: stable;
+ }
+
+ body {
+     margin: 0;
+     font-size: large;
+     color: var(--wood);
+     background-color: var(--dew);
+     line-height: 1.5;
+ }
+
+ .centered-constrained {
+     max-width: 70rem;
+     margin: 0 auto;
+ }
+
+ #everything {
+     padding: 1rem;
+ }
