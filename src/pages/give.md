@@ -5,4 +5,4 @@ description: How to give.
 ---
 
 # How to Give
-Coming soon.
+Please contact us at contact@sproutingtech.org for more information on donating.

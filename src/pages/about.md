@@ -8,14 +8,13 @@ description: About the Sprouting Tech Foundation.
 We are a non profit organization focused on improving STEM education in Texas for K-12 students.
 
 ## Our Team
-![Sai Kurelli](../images/sai-kurelli.jpg)
-Sai Kurelli
 
-![Daniel Ting](../images/daniel-ting.jpg)
-Daniel Ting
-
-## Fact Sheet
-Legal documents coming soon.
+### Board of Directors
+- Jeongwoo Choi
+- Adam Nguyen
+- Jayine Nguyen
+- Sai Kurelli
+- Daniel Ting
 
 ## Contact Us
 - Facebook: https://www.facebook.com/sproutingtechfoundation/
