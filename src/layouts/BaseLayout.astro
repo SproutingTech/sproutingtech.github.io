@@ -43,3 +43,13 @@ const { title, description, frontmatter } = Astro.props;
         </div>
     </body>
 </html>
+
+<!-- Make CloudFlare email decode work with Astro transitions 
+https://github.com/withastro/astro/issues/15470 -->
+<script>
+    document.addEventListener("astro:before-swap", (e) => {
+        e.newDocument
+            .querySelector('script[src*="/cloudflare-static/email-decode"]')
+            ?.setAttribute("data-astro-rerun", "");
+    });
+</script>
