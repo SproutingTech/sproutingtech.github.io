@@ -13,4 +13,4 @@ To donate online, we are working on a donation link which will be available soon
 
 To donate by check, wire, or other methods, please reach out to us at donations@sproutingtech.org and we will provide instructions.
 
-If you are interested in providing an in-kind donation, please reach out to us at donations@sprougingtech.org to discuss further.
+If you are interested in providing an in-kind donation, please reach out to us at donations@sproutingtech.org to discuss further.
