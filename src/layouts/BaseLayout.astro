@@ -18,6 +18,8 @@ const { title, description, frontmatter } = Astro.props;
 
         <title>{(title ?? frontmatter.title) + " | Sprouting Tech Foundation"}</title>
         <meta name="description" content={description ?? "Sprouting Tech Foundation"} />
+        <!-- Disable iOS automatic phone-number detection for EIN -->
+        <meta name="format-detection" content="telephone=no">
 
         <!-- SEO -->
         <meta property="og:title" content={title ?? frontmatter.title} />
